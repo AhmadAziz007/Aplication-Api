@@ -1,0 +1,45 @@
+{
+	"info": {
+		"_postman_id": "8da3207d-ea4e-48f7-98b8-7360e09b3a26",
+		"name": "aplication-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20727504"
+	},
+	"item": [
+		{
+			"name": "transaction",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqYW1lc2JvbmRAZ21haWwuY29tIiwiZXhwIjoxNzQ3ODM2ODU3LCJpYXQiOjE3NDc4MDA4NTd9.jx2bAjNWw5vorpjQYvnnwl1VwHLxsuvF66D8MOkRm5c",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"password\": \"123456\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8085/api/v1.0/api/transactions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"api",
+						"v1.0",
+						"api",
+						"transactions"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
